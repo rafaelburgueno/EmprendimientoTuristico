@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+//import { HoHoraFlorestaComponent } from './ho-hora-floresta/ho-hora-floresta.component';
+import { HoraFlorestaComponent } from './hora-floresta/hora-floresta.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //HoHoraFlorestaComponent,
+    HoraFlorestaComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
