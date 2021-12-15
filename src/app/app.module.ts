@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 //import { HoHoraFlorestaComponent } from './ho-hora-floresta/ho-hora-floresta.component';
 import { HoraFlorestaComponent } from './hora-floresta/hora-floresta.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     //HoHoraFlorestaComponent,
     HoraFlorestaComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
