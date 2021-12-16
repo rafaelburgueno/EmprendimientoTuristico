@@ -1,29 +1,37 @@
-<div class="container mt-5">
-        
-        <p>hora-floresta works!</p>
-        <p>la hora en florestaes:</p>
-        <p>{{hora_en_floresta}}</p>
-        <p>{{hora_en_floresta | date:'d/M/y H:m' }}</p>
-        
-        <div class="row">
-                <div class="col">
-                        <h3>*ngIf</h3>
-                        <hr>
+<div class="m-5"></div>
+<section id="contact" class="contact animated fadeIn">
+        <div class="container">
+                <div class="container">
 
-                        <div class="">
-                        <button (click)="mostrar = !mostrar" class="btn btn-outline-primary" type="button">mostrar/ocultar</button>
-                                <p *ngIf="mostrar" class="mt-3 alert alert-success"><strong>{{frase.autor}} : </strong>{{frase.mensaje}}</p>
+                        <p>hora-floresta works!</p>
+                        <p>la hora en florestaes:</p>
+                        <p>{{hora_en_floresta}}</p>
+                        <p>{{hora_en_floresta | date:'d/M/y H:m' }}</p>
+
+                        <div class="row">
+                                <div class="col">
+                                        <h3>*ngIf</h3>
+                                        <hr>
+
+                                        <div class="">
+                                                <button (click)="mostrar = !mostrar" class="btn btn-outline-primary"
+                                                        type="button">mostrar/ocultar</button>
+                                                <p *ngIf="mostrar" class="mt-3 alert alert-success">
+                                                        <strong>{{frase.autor}} : </strong>{{frase.mensaje}}</p>
+                                        </div>
+                                </div>
+
+
+                                <div class="col">
+                                        <h3>*ngFor</h3>
+                                        <hr>
+                                        <ul>
+                                                <li *ngFor="let persona of personajes; let i = index">{{i +1}} -
+                                                        {{persona}}</li>
+                                        </ul>
+                                </div>
+
                         </div>
                 </div>
-
-
-                <div class="col">
-                        <h3>*ngFor</h3>
-                        <hr>
-                        <ul>
-                                <li *ngFor="let persona of personajes; let i = index">{{i +1}} - {{persona}}</li>
-                        </ul>
-                </div>
-
         </div>
-</div>
+</section>
